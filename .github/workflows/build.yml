@@ -29,9 +29,10 @@ jobs:
           buildozer init
           buildozer -v android debug
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
+           - name: Upload APK
+        uses: actions/upload-artifact@v2
         with:
           name: Sonapix APK
           path: bin/*.apk
+
 
